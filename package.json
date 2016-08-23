@@ -1,0 +1,36 @@
+{
+  "name": "developers",
+  "version": "1.0.0",
+  "description": "This is a developer friendly starter child theme for the Genesis framework which includes a modular architecture, Sass, gulp, Bourbon, Neat and Composer. It is your starting child theme for all of your projects to save you time and money.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbarry50/Genesis-Developers-Starter-Theme.git"
+  },
+  "author": "sbarry50",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/sbarry50/Genesis-Developers-Starter-Theme/issues"
+  },
+  "homepage": "https://github.com/sbarry50/Genesis-Developers-Starter-Theme#readme",
+  "devDependencies": {
+    "animate.css": "^3.5.1",
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "browser-sync": "^2.14.0",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "sass-rem": "^1.2.2"
+  }
+}

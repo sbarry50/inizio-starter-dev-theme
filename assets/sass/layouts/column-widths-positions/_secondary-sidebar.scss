@@ -1,0 +1,15 @@
+/* ### Structure and Layouts - Columns Widths & Positions - Secondary Sidebar
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar-secondary {
+  float: left;
+  width: $sidebar-secondary--width;
+
+  @include media( $breakpoint__screen-size--medium ) {
+    width: $sidebar-secondary--width--medium;
+  }
+
+  .content-sidebar-sidebar & {
+    float: right;
+  }
+}

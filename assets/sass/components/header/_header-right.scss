@@ -1,0 +1,14 @@
+/* ### Components - Header - Header Right Widget Area
+---------------------------------------------------------------------------------------------------- */
+
+.site-header .widget-area {
+  float: right;
+  width: $header-right--width;
+
+  @include media( $breakpoint__screen-size--medium ) {
+    width: $header-right--width--medium-screen;
+  }
+  @include media( $breakpoint__screen-size--large ) {
+    width: $header-right--width--large-screen;
+  }
+}

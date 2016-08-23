@@ -1,0 +1,31 @@
+/* ### Base - Common - Media Styles
+---------------------------------------------------------------------------------------------------- */
+
+.wp-caption {
+  &.alignleft {
+    margin: 0 24px 24px 0;
+  }
+
+  &.alignright {
+    margin: 0 0 24px 24px;
+  }
+}
+
+.wp-caption-text {
+  font-size: rem ( $wp-caption-text--font-size );
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.entry-content {
+  p.wp-caption-text {
+    margin-bottom: 0;
+  }
+
+  .wp-audio-shortcode,
+  .wp-playlist,
+  .wp-video {
+    margin: 0 0 28px;
+  }
+}

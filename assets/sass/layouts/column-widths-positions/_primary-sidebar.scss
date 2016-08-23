@@ -1,0 +1,19 @@
+/* ### Structure and Layouts - Columns Widths & Positions - Primary Sidebar
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar-primary {
+  float: right;
+  width: $sidebar-primary--width;
+
+  @include media( $breakpoint__screen-size--medium ) {
+    width: $sidebar-primary--width--medium-screen;
+  }
+  @include media( $breakpoint__screen-size--larger ) {
+    width: $sidebar-primary--width--larger-screen;
+  }
+
+  .sidebar-content &,
+  .sidebar-sidebar-content & {
+    float: left;
+  }
+}

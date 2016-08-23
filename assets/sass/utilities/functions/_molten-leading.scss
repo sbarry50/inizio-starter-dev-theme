@@ -1,0 +1,7 @@
+// ### Utilities - Functions - Molten Leading
+// @link http://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
+//---------------------------------------------------------------------------------------------------- */
+
+@function molten-leading($lower-gate, $upper-gate, $min-line-height, $max-line-height) {
+  @return calc(#{$min-line-height} + #{strip-units($max-line-height - $min-line-height)} * ((100vw - #{$lower-gate}) / #{strip-units($upper-gate - $lower-gate)}));
+}

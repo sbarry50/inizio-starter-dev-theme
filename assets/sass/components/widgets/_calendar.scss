@@ -1,0 +1,13 @@
+/* ### Components - Widgets - Calendar
+---------------------------------------------------------------------------------------------------- */
+
+.widget_calendar {
+  table {
+    width: $widget-calendar__table--width;
+  }
+
+  td,
+  th {
+    text-align: center;
+  }
+}

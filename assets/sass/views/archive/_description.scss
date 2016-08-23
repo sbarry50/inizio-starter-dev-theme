@@ -1,0 +1,22 @@
+/* ### Views - Archive - Description
+---------------------------------------------------------------------------------------------------- */
+
+.archive-description {
+  background-color: $archive-description--background-color;
+  @include rem( font-size, $archive-description--font-size );
+  margin-bottom: 5%;
+  padding: 30px;
+
+  @include media( $breakpoint__screen-size--small ) {
+    margin-bottom: 40px;
+    padding: 60px;
+  }
+
+  .archive-description p:last-child {
+    margin-bottom: 0;
+  }
+
+  .entry-title {
+    @include rem( font-size, $archive-description__entry-title--font-size );
+  }
+}

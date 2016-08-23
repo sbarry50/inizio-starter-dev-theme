@@ -1,0 +1,25 @@
+//
+// Site Header Base Styles
+//============================================
+
+.site-header {
+  background-color: $site-header--background-color;
+
+  > .wrap {
+    padding: 20px 0;
+  }
+
+  .wrap {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @include media($breakpoint__screen-size--medium) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  //@include media($breakpoint__screen-size--medium) {
+  //
+  //}
+}

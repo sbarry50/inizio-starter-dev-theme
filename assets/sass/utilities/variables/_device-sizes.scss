@@ -1,0 +1,21 @@
+// ### Utilities - Variables - Device Sizes
+//---------------------------------------------------------------------------------------------------- */
+
+$screen-size--smallest: 321px;
+$screen-size--smaller: 481px;
+$screen-size--small: 861px;
+$screen-size--medium: 1024px;
+$screen-size--large: 1201px;
+$screen-size--larger: 1341px;
+$screen-size--largest: 1601px;
+
+// Standard Media Query Breakpoints
+// Src: https://github.com/WebDevStudios/wd_s/blob/master/assets/sass/utilities/variables/_breakpoints.scss
+//=============================
+//$large-desktop: rem(1680);
+//$desktop: rem(1366);
+//$tablet-landscape: rem(1024);
+//$wp-admin-bar: rem(783);
+//$tablet-portrait: rem(768);
+//$phone-landscape: rem(640);
+//$phone-portrait: rem(360);

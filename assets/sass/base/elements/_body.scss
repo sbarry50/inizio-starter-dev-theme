@@ -1,0 +1,31 @@
+/* ### Base - Elements - Body
+---------------------------------------------------------------------------------------------------- */
+
+html {
+  font-size: $html--font-size;
+}
+
+body {
+  background-color: $body--background-color;
+  color: $base--color;
+  font-family: $base--font-family;
+  @include rem( font-size, $base--font-size );
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: $base--line-height;
+  margin: 0;
+
+  @include media( $breakpoint__screen-size--small ) {
+    @include rem( font-size, $base--font-size--small-screen-up );
+  }
+
+  > div {
+    /* Chrome fix */
+    font-size: strip-units( $base--font-size ) * 0.1 + rem;
+
+    @include media( $breakpoint__screen-size--small ) {
+      font-size: strip-units( $base--font-size--small-screen-up ) * 0.1 + rem;
+    }
+  }
+
+}

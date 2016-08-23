@@ -1,0 +1,30 @@
+/*!
+	Theme Name: Inizio
+	Theme URI: http://www.sb2media.com
+
+	Description: The Genesis-powered Developer's Starter Child Theme
+	Author: sbarry50
+	Author URI: http://www.sb2media.com
+	Version: 1.0.1
+
+    Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, mobile-first, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+	Text Domain: inizio
+*/
+
+@import 'bourbon';
+@import 'neat';
+@import '../../node_modules/sass-rem/rem';
+
+@import 'utilities/index';
+@import 'base/index';
+@import 'layouts/index';
+@import 'plugins/index';
+@import 'components/index';
+@import 'views/index';

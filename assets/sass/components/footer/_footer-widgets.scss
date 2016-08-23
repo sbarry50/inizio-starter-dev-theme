@@ -1,0 +1,52 @@
+/* ### Components - Footer - Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+  background-color: $footer-widgets--background-color;
+  font-size: rem ( $footer-widgets--font-size );
+  clear: both;
+  padding: 60px 0;
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+  width: $footer-widgets--width;
+
+  @include media( $breakpoint__screen-size--medium ) {
+    width: $footer-widgets--width--medium-screen;
+  }
+  @include media( $breakpoint__screen-size--large ) {
+    width: $footer-widgets--width--large-screen;
+  }
+  @include media( $breakpoint__screen-size--larger ) {
+    width: $footer-widgets--width--larger-screen;
+  }
+}
+
+.footer-widgets-1 {
+  @include media( $breakpoint__screen-size--medium ) {
+    margin-right: 30px;
+  }
+  @include media( $breakpoint__screen-size--large ) {
+    margin-right: 60px;
+  }
+  @include media( $breakpoint__screen-size--larger ) {
+    margin-right: 70px;
+  }
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+  float: left;
+  margin: 0 auto 40px;
+
+  @include media( $breakpoint__screen-size--medium ) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer-widgets-3 {
+  float: right;
+}

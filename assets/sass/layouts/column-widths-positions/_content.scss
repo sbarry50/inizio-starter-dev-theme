@@ -1,0 +1,43 @@
+/* ### Structure and Layouts - Columns Widths & Positions - Content
+---------------------------------------------------------------------------------------------------- */
+
+.content {
+  float: right;
+  width: $content--width;
+
+  @include media( $breakpoint__screen-size--medium ) {
+    width: $content--width--medium-screen;
+  }
+  @include media( $breakpoint__screen-size--large ) {
+    width: $content--width--large-screen;
+  }
+  @include media( $breakpoint__screen-size--larger ) {
+    width: $content--width--larger-screen;
+  }
+
+  .content-sidebar &,
+  .content-sidebar-sidebar &,
+  .sidebar-content-sidebar & {
+    float: left;
+  }
+
+  .content-sidebar-sidebar &,
+  .sidebar-content-sidebar &,
+  .sidebar-sidebar-content & {
+    width: $content-sidebar-sidebar--width;
+
+    @include media( $breakpoint__screen-size--medium ) {
+      width: $content-sidebar-sidebar--width--medium-screen;
+    }
+    @include media( $breakpoint__screen-size--large ) {
+      width: $content-sidebar-sidebar--width--large-screen;
+    }
+    @include media( $breakpoint__screen-size--larger ) {
+      width: $content-sidebar-sidebar--width--larger-screen;
+    }
+  }
+
+  .full-width-content & {
+    width: $full-width-content__content--width;
+  }
+}

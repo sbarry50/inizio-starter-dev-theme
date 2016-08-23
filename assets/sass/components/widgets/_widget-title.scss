@@ -1,0 +1,7 @@
+/* ### Components - Widgets - Widget Title
+---------------------------------------------------------------------------------------------------- */
+
+.widget-title {
+  @include rem( font-size, $widget-title--font-size );
+  margin-bottom: 20px;
+}

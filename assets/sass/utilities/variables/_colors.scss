@@ -1,0 +1,167 @@
+// ### Utilities - Variables - Colors
+//---------------------------------------------------------------------------------------------------- */
+
+$white: #fff;
+$black: #000;
+$gray--darkest: #333;
+$gray--darker: #555;
+$gray--dark: #777;
+$gray: #999;
+$gray--light: #ccc;
+$gray--lighter: #ddd;
+$gray--lightest: #eee;
+$red: #c3251d;
+
+//
+// Base Variables
+//========================================
+
+$base--color: $gray--darkest;
+
+$link--color: $red;
+$link--color--hover: $gray--darkest;
+
+$body--background-color: $gray--lightest;
+
+//
+// Elements
+//========================================
+
+$input--color: $gray--darkest;
+$input--background-color: $white;
+$input--border-color: $gray--lighter;
+$input--border-color--focus: $gray;
+
+$hr--border-color: $gray--lightest;
+
+$button--color: $white;
+$button--color--hover: $white;
+$button--background-color: $gray--darkest;
+$button--background-color--hover: $red;
+$button--color--disabled: $gray--dark;
+$button--background-color--disabled: $gray--lightest;
+$entry-content__button--color--hover: $white;
+
+$gallery__img--border-color: $gray--lightest;
+$gallery__img--border-color--hover: $gray;
+
+$tbody--border-color: $gray--lightest;
+$td--border-color: $gray--lightest;
+
+//
+// Header
+//========================================
+
+$site-title--link-color: $gray--darkest;
+$site-header--background-color: $white;
+
+//
+// Navigation
+//========================================
+
+$nav--link-color: $gray--darkest;
+$nav--link-color--hover: $red;
+
+$submenu--link-background-color: $white;
+$submenu--border-color: $gray--lightest;
+
+$primary-nav--link-color: $nav--link-color;
+$primary-nav--background-color: $white;
+$primary-nav--border-color: $gray--lightest;
+
+$nav-secondary--link-color: $nav--link-color;
+$nav-secondary--link-color--hover: $nav--link-color--hover;
+$nav-secondary--background-color: $white;
+$nav-secondary--border-color: $gray--lightest;
+
+$js__nav__button--color--hover: $black;
+$js__nav__button--color--focus: $red;
+$js__nav__button--background-color--hover: $white;
+$js__nav__button--background-color--focus: $white;
+
+$menu-toggle--color: $gray--darkest;
+$menu-toggle--background-color: $white;
+$menu-toggle--border-color: $gray--lightest;
+
+$archive-pagination--color: $gray--darkest;
+$archive-pagination--color--hover: $white;
+$archive-pagination--background-color: $white;
+$archive-pagination--background-color--hover: $red;
+
+//
+// Breadcrumbs
+//========================================
+
+$breadcrumbs--background-color: $white;
+
+//
+// Entry Content
+//========================================
+
+$entry--background-color: $white;
+
+$entry-title--link-color: $gray--darkest;
+$entry-title--link-color--hover: $red;
+
+$entry-content__code--color: $gray--lightest;
+$entry-content__code--background-color: $gray--darkest;
+
+$entry-footer__entry-meta--border-color: $gray--lightest;
+
+//
+// Author Box
+//========================================
+$author-box--background-color: $white;
+
+//
+// Author Box
+//========================================
+$after-entry--background-color: $white;
+
+//
+// Comments
+//========================================
+
+$comments--background-color: $white;
+
+//
+// Sidebar
+//========================================
+
+$sidebar__widget-title--link-color: $gray--darkest;
+$sidebar__widget--background-color: $white;
+
+//
+// Footer
+//========================================
+
+$site-footer--background-color: $white;
+$site-footer--border-color: $gray--lightest;
+$footer-widgets--background-color: $white;
+
+//
+// Plugins
+//========================================
+
+$enews-widget--color: $white;
+$enews-widget--background-color: $gray--darkest;
+$enews-widget__input--border-color: $gray--darkest;
+$enews-widget__submit-button--color: $white;
+$enews-widget__submit-button--color--hover: $gray--darkest;
+$enews-widget__submit-button--background-color: $red;
+$enews-widget__submit-button--background-color--hover: $white;
+
+//
+// Archive
+//========================================
+$archive-description--background-color: $white;
+
+//
+// Accessibility
+//========================================
+
+$focus--color: $gray--darkest;
+$focus--border-color: $gray--light;
+
+$screen-reader-text--color--focus: $input--color;
+$screen-reader-text--background-color--focus: $input--background-color;

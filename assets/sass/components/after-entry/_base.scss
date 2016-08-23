@@ -1,0 +1,16 @@
+//
+// After Entry Base Styles
+//============================================
+
+
+.after-entry {
+  background-color: $after-entry--background-color;
+  @include rem( font-size, $after-entry--font-size );
+  margin-bottom: 5%;
+  padding: 30px;
+
+  @include media( $breakpoint__screen-size--small ) {
+    margin-bottom: 40px;
+    padding: 60px;
+  }
+}
