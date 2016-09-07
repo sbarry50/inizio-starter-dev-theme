@@ -17,7 +17,7 @@
     float: none;
     margin: 16px auto;
 
-    @include media( $breakpoint__screen-size--medium ) {
+    @include media( $breakpoint__screen-size--medium-up ) {
       float: right;
       margin: 12px auto 0;
     }

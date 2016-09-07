@@ -6,7 +6,7 @@
   @include rem( font-size, $sidebar--font-size );
   margin-bottom: 5%;
 
-  @include media( $breakpoint__screen-size--small ) {
+  @include media( $breakpoint__screen-size--small-up ) {
     margin-bottom: 40px;
   }
 
@@ -15,7 +15,7 @@
     margin-bottom: 5%;
     padding: 30px;
 
-    @include media( $breakpoint__screen-size--small ) {
+    @include media( $breakpoint__screen-size--small-up ) {
       padding: 40px;
       margin-bottom: 0;
     }

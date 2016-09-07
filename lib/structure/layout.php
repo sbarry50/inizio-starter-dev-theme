@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive HTML markup structure
+ * Layout HTML markup structure
  *
  * @package     SB2\Developers
  * @since       1.0.0
@@ -10,3 +10,6 @@
  */
 
 namespace SB2\Inizio;
+
+remove_action( 'genesis_after_content_sidebar_wrap', 'genesis_get_sidebar_alt' );
+add_action( 'genesis_after_content', 'genesis_get_sidebar_alt', 15 );

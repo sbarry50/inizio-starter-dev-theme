@@ -13,25 +13,25 @@
 .footer-widgets-3 {
   width: $footer-widgets--width;
 
-  @include media( $breakpoint__screen-size--medium ) {
+  @include media( $breakpoint__screen-size--medium-up ) {
     width: $footer-widgets--width--medium-screen;
   }
-  @include media( $breakpoint__screen-size--large ) {
+  @include media( $breakpoint__screen-size--large-up ) {
     width: $footer-widgets--width--large-screen;
   }
-  @include media( $breakpoint__screen-size--larger ) {
+  @include media( $breakpoint__screen-size--larger-up ) {
     width: $footer-widgets--width--larger-screen;
   }
 }
 
 .footer-widgets-1 {
-  @include media( $breakpoint__screen-size--medium ) {
+  @include media( $breakpoint__screen-size--medium-up ) {
     margin-right: 30px;
   }
-  @include media( $breakpoint__screen-size--large ) {
+  @include media( $breakpoint__screen-size--large-up ) {
     margin-right: 60px;
   }
-  @include media( $breakpoint__screen-size--larger ) {
+  @include media( $breakpoint__screen-size--larger-up ) {
     margin-right: 70px;
   }
 }
@@ -41,7 +41,7 @@
   float: left;
   margin: 0 auto 40px;
 
-  @include media( $breakpoint__screen-size--medium ) {
+  @include media( $breakpoint__screen-size--medium-up ) {
     margin-left: 0;
     margin-bottom: 0;
   }

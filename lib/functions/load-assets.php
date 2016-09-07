@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-namespace SB2\Developers;
+namespace SB2\Inizio;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**
@@ -30,5 +30,5 @@ function enqueue_assets() {
 		'subMenu'  => __( 'Menu', CHILD_TEXT_DOMAIN ),
 	);
 	wp_localize_script( CHILD_TEXT_DOMAIN . '-responsive-menu', 'genesisSampleL10n', $localized_script_args );
-
+	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-modernizr', CHILD_URL . '/assets/js/modernizr-custom.js', array(), CHILD_THEME_VERSION, true );
 }

@@ -5,10 +5,10 @@
   float: right;
   width: $header-right--width;
 
-  @include media( $breakpoint__screen-size--medium ) {
+  @include media( $breakpoint__screen-size--medium-up ) {
     width: $header-right--width--medium-screen;
   }
-  @include media( $breakpoint__screen-size--large ) {
+  @include media( $breakpoint__screen-size--large-up ) {
     width: $header-right--width--large-screen;
   }
 }

@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-namespace SB2\Developers;
+namespace SB2\Inizio;
 
 
 add_filter( 'genesis_author_box_gravatar_size', __NAMESPACE__ . '\setup_author_box_gravatar' );

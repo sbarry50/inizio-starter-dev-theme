@@ -2,18 +2,24 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .sidebar-primary {
-  float: right;
   width: $sidebar-primary--width;
 
-  @include media( $breakpoint__screen-size--medium ) {
-    width: $sidebar-primary--width--medium-screen;
-  }
-  @include media( $breakpoint__screen-size--larger ) {
-    width: $sidebar-primary--width--larger-screen;
+  @include media( $breakpoint__screen-size--medium-up ) {
+    flex: 0 0 300px;
   }
 
-  .sidebar-content &,
-  .sidebar-sidebar-content & {
-    float: left;
+  @include media( $breakpoint__screen-size--larger-up ) {
+    flex: 0 0 360px;
+  }
+}
+
+.no-flexbox {
+  .sidebar-primary {
+    float: right;
+
+    .sidebar-content &,
+    .sidebar-sidebar-content & {
+      float: left;
+    }
   }
 }

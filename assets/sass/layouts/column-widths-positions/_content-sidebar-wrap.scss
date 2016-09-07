@@ -1,29 +1,42 @@
 /* ### Structure and Layouts - Columns Widths & Positions - Content Sidebar Wrap
 ---------------------------------------------------------------------------------------------------- */
 
+
 .content-sidebar-wrap {
-  .content-sidebar-sidebar &,
-  .sidebar-content-sidebar &,
-  .sidebar-sidebar-content & {
-    width: $content-sidebar-wrap--width;
-
-    @include media( $breakpoint__screen-size--medium ) {
-      width: $content-sidebar-wrap--width--medium-screen;
-    }
-    @include media( $breakpoint__screen-size--large ) {
-      width: $content-sidebar-wrap--width--large-screen;
-    }
-    @include media( $breakpoint__screen-size--larger ) {
-      width: $content-sidebar-wrap--width--larger-screen;
-    }
+  @include media( $breakpoint__screen-size--medium-up ) {
+    display: flex;
+    justify-content: space-between;
   }
+}
 
-  .content-sidebar-sidebar & {
-    float: left;
-  }
+.no-flexbox {
+  .content-sidebar-wrap {
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
 
-  .sidebar-content-sidebar &,
-  .sidebar-sidebar-content & {
-    float: right;
+      @include media($breakpoint__screen-size--medium-up) {
+        width: $content-sidebar-sidebar__content-sidebar-wrap--width--medium-screen--no-flex;
+      }
+      @include media($breakpoint__screen-size--large-up) {
+        width: $content-sidebar-sidebar__content-sidebar-wrap--width--large-screen--no-flex;
+      }
+      @include media($breakpoint__screen-size--larger-up) {
+        width: $content-sidebar-sidebar__content-sidebar-wrap--width--larger-screen--no-flex;
+      }
+    }
+
+    .content-sidebar-sidebar & {
+      @include media($breakpoint__screen-size--medium-up) {
+        float: left;
+      }
+    }
+
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
+      @include media($breakpoint__screen-size--medium-up) {
+        float: right;
+      }
+    }
   }
 }

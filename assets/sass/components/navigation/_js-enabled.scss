@@ -1,84 +1,86 @@
 /* ### Components - Navigation - JS Enabled
 ---------------------------------------------------------------------------------------------------- */
 
-.js {
-  .genesis-nav-menu {
-    .sub-menu , .sub-menu a {
-      width: 100%;
-    }
-
-    .menu-item:hover {
-      position: relative;
-    }
-
-    .menu-item > a:focus {
-      ul.sub-menu,
-      ul.sub-menu .sub-menu {
-        left: 0;
-        margin-left: 0;
-      }
-    }
-
-    > .menu-item-has-children > a:after {
-      content: none;
-    }
-
-    .sub-menu {
-      border: none;
-      clear: both;
-      display: none;
-      margin: 0;
-      opacity: 1;
-      padding-left: 15px;
-      position: static;
-      width: 100%;
-
-      .sub-menu {
-        margin: 0;
-      }
-    }
-  }
-
-  nav.nav-primary,
-  .site-header nav  {
-    display: none;
-    position: relative;
-  }
-
-  .site-header nav .wrap {
-    padding: 0;
-  }
-
-  nav.pagination {
-    display: block;
-  }
-
-  .nav-primary, .site-header {
-    .genesis-nav-menu .menu-item {
-      display: block;
-      float: none;
-      margin: 1px 0;
-      position: relative;
-      text-align: left;
-
-      a {
-        border: none;
-        padding: 12px 0;
+@include media( $breakpoint__screen-size--medium-max ) {
+  .js {
+    .genesis-nav-menu {
+      .sub-menu , .sub-menu a {
         width: 100%;
       }
+
+      .menu-item:hover {
+        position: relative;
+      }
+
+      .menu-item > a:focus {
+        ul.sub-menu,
+        ul.sub-menu .sub-menu {
+          left: 0;
+          margin-left: 0;
+        }
+      }
+
+      > .menu-item-has-children > a:after {
+        content: none;
+      }
+
+      .sub-menu {
+        border: none;
+        clear: both;
+        display: none;
+        margin: 0;
+        opacity: 1;
+        padding-left: 15px;
+        position: static;
+        width: 100%;
+
+        .sub-menu {
+          margin: 0;
+        }
+      }
     }
-  }
 
-  nav button:hover,
-  .menu-toggle:hover,
-  .nav-primary {
-    background-color: $js__nav__button--background-color--hover;
-    color: $js__nav__button--color--hover;
-  }
+    nav.nav-primary,
+    .site-header nav  {
+      display: none;
+      position: relative;
+    }
 
-  nav button:focus,
-  .menu-toggle:focus {
-    background-color: $js__nav__button--background-color--focus;
-    color: $js__nav__button--color--focus;
+    .site-header nav .wrap {
+      padding: 0;
+    }
+
+    nav.pagination {
+      display: block;
+    }
+
+    .nav-primary, .site-header {
+      .genesis-nav-menu .menu-item {
+        display: block;
+        float: none;
+        margin: 1px 0;
+        position: relative;
+        text-align: left;
+
+        a {
+          border: none;
+          padding: 12px 0;
+          width: 100%;
+        }
+      }
+    }
+
+    nav button:hover,
+    .menu-toggle:hover,
+    .nav-primary {
+      background-color: $js__nav__button--background-color--hover;
+      color: $js__nav__button--color--hover;
+    }
+
+    nav button:focus,
+    .menu-toggle:focus {
+      background-color: $js__nav__button--background-color--focus;
+      color: $js__nav__button--color--focus;
+    }
   }
 }

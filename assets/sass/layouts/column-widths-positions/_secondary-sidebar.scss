@@ -2,14 +2,19 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .sidebar-secondary {
-  float: left;
   width: $sidebar-secondary--width;
 
-  @include media( $breakpoint__screen-size--medium ) {
-    width: $sidebar-secondary--width--medium;
+  @include media($breakpoint__screen-size--medium-up) {
+    flex: 0 0 180px;
   }
+}
 
-  .content-sidebar-sidebar & {
-    float: right;
+.no-flexbox {
+  .sidebar-secondary {
+    float: left;
+
+    .content-sidebar-sidebar & {
+      float: right;
+    }
   }
 }

@@ -23,7 +23,7 @@
   overflow: hidden;
   text-align: center;
 
-  @include media( $breakpoint__screen-size--medium ) {
+  @include media( $breakpoint__screen-size--medium-up ) {
     display: none;
     visibility: hidden;
   }

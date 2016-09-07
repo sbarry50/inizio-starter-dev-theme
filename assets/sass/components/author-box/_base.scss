@@ -12,7 +12,7 @@
     margin-bottom: 0;
   }
 
-  @include media( $breakpoint__screen-size--small ) {
+  @include media( $breakpoint__screen-size--small-up ) {
     margin-bottom: 40px;
     padding: 60px;
   }

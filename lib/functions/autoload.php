@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-namespace SB2\Developers;
+namespace SB2\Inizio;
 
 /**
  * Loads nonadmin files.
@@ -24,12 +24,14 @@ function load_nonadmin_files() {
 		'components/customizer/css-handler.php',
 		'components/customizer/helpers.php',
 		'functions/formatting.php',
+		'functions/layout.php',
 		'functions/load-assets.php',
 		'functions/markup.php',
 //		'structure/archive.php',
 		'structure/comments.php',
 //		'structure/footer.php',
 //		'structure/header.php',
+		'structure/layout.php',
 		'structure/menu.php',
 		'structure/post.php',
 //		'structure/sidebar.php',

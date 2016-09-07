@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-namespace SB2\Developers;
+namespace SB2\Inizio;
 
 /**
  * Initialize the theme's constants

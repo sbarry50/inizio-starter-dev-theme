@@ -1,0 +1,44 @@
+/* ### Structure and Layouts - Columns Widths & Positions - Flexbox Positions
+---------------------------------------------------------------------------------------------------- */
+
+@include media($breakpoint__screen-size--medium-up) {
+  .content-sidebar .content,
+  .sidebar-content .sidebar-primary,
+  .content-sidebar-sidebar .content,
+  .sidebar-content-sidebar .sidebar-secondary,
+  .sidebar-sidebar-content .sidebar-secondary {
+    @include order(1);
+  }
+
+  .sidebar-content .content,
+  .content-sidebar .sidebar-primary,
+  .sidebar-content-sidebar .content,
+  .content-sidebar-sidebar .sidebar-primary,
+  .sidebar-sidebar-content .sidebar-primary {
+    @include order(2);
+    margin-left: 40px;
+  }
+
+  .sidebar-sidebar-content .content,
+  .sidebar-content-sidebar .sidebar-primary,
+  .content-sidebar-sidebar .sidebar-secondary {
+    @include order(3);
+    margin-left: 40px;
+  }
+}
+
+@include media($breakpoint__screen-size--larger-up) {
+  .content-sidebar .sidebar-primary,
+  .sidebar-content .content,
+  .content-sidebar-sidebar .sidebar-primary,
+  .sidebar-content-sidebar .content,
+  .sidebar-sidebar-content .sidebar-primary {
+    margin-left: 50px;
+  }
+
+  .content-sidebar-sidebar .sidebar-secondary,
+  .sidebar-content-sidebar .sidebar-primary,
+  .sidebar-sidebar-content .content {
+    margin-left: 50px;
+  }
+}

@@ -2,54 +2,58 @@
 /* @link https://github.com/hellofromtonya/hello-child-theme/blob/master/assets/sass/layout/_columns.scss
 ---------------------------------------------------------------------------------------------------- */
 
-@include media( $breakpoint__screen-size--small ) {
-  .one-half,
-  .three-sixths,
-  .two-fourths {
-    @include span-columns(6);
-  }
+@include media( $breakpoint__screen-size--small-up ) {
+  .no-flexbox {
+    .one-half,
+    .three-sixths,
+    .two-fourths {
+      @include span-columns(6);
+    }
 
-  .one-third,
-  .two-sixths {
-    @include span-columns(4);
-  }
+    .one-third,
+    .two-sixths {
+      @include span-columns(4);
+    }
 
-  .four-sixths,
-  .two-thirds {
-    @include span-columns(8);
-  }
+    .four-sixths,
+    .two-thirds {
+      @include span-columns(8);
+    }
 
-  .one-fourth {
-    @include span-columns(3);
-  }
+    .one-fourth {
+      @include span-columns(3);
+    }
 
-  .three-fourths {
-    @include span-columns(9);
-  }
+    .three-fourths {
+      @include span-columns(9);
+    }
 
-  .one-sixth {
-    @include span-columns(2);
-  }
+    .one-sixth {
+      @include span-columns(2);
+    }
 
-  .five-sixths {
-    @include span-columns(10);
+    .five-sixths {
+      @include span-columns(10);
+    }
   }
 }
 
-.last {
-  @include omega();
-  clear: right;
-}
+.no-flexbox {
+  .last {
+    @include omega();
+    clear: right;
+  }
 
-.first {
-  @include omega();
-  clear: left;
-}
+  .first {
+    @include omega();
+    clear: left;
+  }
 
-.one-half {
-  clear: left;
+  .one-half {
+    clear: left;
 
-  &.last {
-    clear: none;
+    &.last {
+      clear: none;
+    }
   }
 }

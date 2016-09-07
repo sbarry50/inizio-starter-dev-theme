@@ -5,38 +5,53 @@
 .wrap {
   margin: 0 auto;
   max-width: $max-width;
+}
 
-  @include media( $breakpoint__screen-size--medium ) {
-    max-width: $max-width--medium-screen;
-  }
-  @include media( $breakpoint__screen-size--large ) {
-    max-width: $max-width--large-screen;
-  }
-  @include media( $breakpoint__screen-size--larger ) {
-    max-width: $max-width--larger-screen;
+.no-flexbox {
+  .site-inner,
+  .wrap {
+    max-width: $max-width--no-flex;
+
+    @include media( $breakpoint__screen-size--medium-up ) {
+      max-width: $max-width--medium-screen--no-flex;
+    }
+    @include media( $breakpoint__screen-size--large-up ) {
+      max-width: $max-width--large-screen--no-flex;
+    }
+    @include media( $breakpoint__screen-size--larger-up ) {
+      max-width: $max-width--larger-screen--no-flex;
+    }
   }
 }
 
 .site-inner {
   clear: both;
-  padding: 5% 5% 0;
+  padding: $site-inner--padding;
   word-wrap: break-word;
 
-  @include media( $breakpoint__screen-size--small ) {
-    padding: 40px 0 0 0;
+  @include media( $breakpoint__screen-size--medium-up ) {
+    padding: $site-inner--padding--medium;
+  }
+  @include media( $breakpoint__screen-size--larger-up ) {
+    padding-top: 50px;
   }
 }
 
 .wrap {
-  padding-left: 5%;
-  padding-right: 5%;
-
-  @include media( $breakpoint__screen-size--small ) {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding-left: $wrap--padding;
+  padding-right: $wrap--padding;
 }
 
 .landing-page .site-inner {
   max-width: $max-width__landing-page;
+}
+
+.site-inner {
+  .content-sidebar-sidebar &,
+  .sidebar-content-sidebar &,
+  .sidebar-sidebar-content & {
+    @include media( $breakpoint__screen-size--medium-up ) {
+      display: flex;
+    }
+  }
 }

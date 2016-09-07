@@ -1,23 +1,29 @@
 // ### Utilities - Variables - Dimensions
 //---------------------------------------------------------------------------------------------------- */
 
-$base--width: 800;
+$base--width: 1600;
 $gutter: 40px;
 
 //
 // Max Widths
 //=============================
-//$max-width: 1280px;
-//$max-width--larger-screen: 1140px;
-//$max-width--large-screen: 960px;
-//$max-width--medium-screen: 800px;
 
-$max-width: 800px;  //$max-width: $base--width + px;
-$max-width--medium-screen: 960px;
-$max-width--large-screen: 1140px;
-$max-width--larger-screen: 1280px;
+$max-width: $base--width + px;
+
+$max-width--no-flex: 800px;
+$max-width--medium-screen--no-flex: 960px;
+$max-width--large-screen--no-flex: 1140px;
+$max-width--larger-screen--no-flex: 1280px;
 
 $max-width__landing-page: 800px;
+
+//
+// Containers
+//=============================
+
+$wrap--padding: 4%;
+$site-inner--padding: 4% 4% 0;
+$site-inner--padding--medium: 40px 4% 0;
 
 //
 // Header
@@ -34,29 +40,30 @@ $header-right--width--large-screen: 800px;
 //
 // Content
 //=============================
-$content--width: 100%; //$content--width: $base--width * 0.6875 + px;
-$content--width--medium-screen: 620px;
-$content--width--large-screen: 800px;
-$content--width--larger-screen: 880px;
+$content--width: 100%;
+$content--width--medium-screen--no-flex: 620px;
+$content--width--large-screen--no-flex: 800px;
+$content--width--larger-screen--no-flex: 880px;
 
-$full-width-content__content--width: 100%;
-
-$sidebar-primary--width: 100%; //$sidebar-primary--width: $base--width * 0.28125 + px;
+$sidebar-primary--width: 100%;
 $sidebar-primary--width--medium-screen: 300px;
 $sidebar-primary--width--larger-screen: 360px;
 
 $sidebar-secondary--width: 100%;
-$sidebar-secondary--width--medium: 180px;
+$sidebar-secondary--width--medium-screen: 180px;
 
-$content-sidebar-wrap--width: 100%;
-$content-sidebar-wrap--width--medium-screen: 740px;
-$content-sidebar-wrap--width--large-screen: 920px;
-$content-sidebar-wrap--width--larger-screen: 1060px;
+$content-sidebar-sidebar__content-sidebar-wrap--width--medium-screen--no-flex: 740px;
+$content-sidebar-sidebar__content-sidebar-wrap--width--large-screen--no-flex: 920px;
+$content-sidebar-sidebar__content-sidebar-wrap--width--larger-screen--no-flex: 1060px;
 
-$content-sidebar-sidebar--width: 100%;
-$content-sidebar-sidebar--width--medium-screen: 400px;
-$content-sidebar-sidebar--width--large-screen: 580px;
-$content-sidebar-sidebar--width--larger-screen: 660px;
+$content-sidebar-sidebar__content--width: 100%;
+//$content-sidebar-sidebar__content--width--medium-screen: 55%;
+$content-sidebar-sidebar--width--medium-screen--no-flex: 400px;
+$content-sidebar-sidebar--width--large-screen--no-flex: 580px;
+$content-sidebar-sidebar--width--larger-screen--no-flex: 660px;
+
+$full-width-content__content--width: 100%;
+
 
 //
 // Footer

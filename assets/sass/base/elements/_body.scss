@@ -15,7 +15,7 @@ body {
   line-height: $base--line-height;
   margin: 0;
 
-  @include media( $breakpoint__screen-size--small ) {
+  @include media( $breakpoint__screen-size--small-up ) {
     @include rem( font-size, $base--font-size--small-screen-up );
   }
 
@@ -23,7 +23,7 @@ body {
     /* Chrome fix */
     font-size: strip-units( $base--font-size ) * 0.1 + rem;
 
-    @include media( $breakpoint__screen-size--small ) {
+    @include media( $breakpoint__screen-size--small-up ) {
       font-size: strip-units( $base--font-size--small-screen-up ) * 0.1 + rem;
     }
   }

@@ -9,7 +9,7 @@
  * @license     GNU General Public License 2.0+
  */
 
-namespace SB2\Developers\Customizer;
+namespace SB2\Inizio\Customizer;
 
 /**
  * Get the settings prefix.

@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     cssMinify = require('gulp-cssnano'),
     sassLint = require('gulp-sass-lint'),
+    modernizr = require('gulp-modernizr'),
 
     // Utilities
     rename = require('gulp-rename'),
@@ -110,6 +111,15 @@ gulp.task('sass:lint', ['css:minify'], function() {
         .pipe(sassLint())
         .pipe(sassLint.format())
         .pipe(sassLint.failOnError())
+});
+
+gulp.task('modernizr', function() {
+    gulp.src('assets/js/*.js')
+        .pipe(modernizr('modernizr-custom.js'))
+        .pipe(modernizr({
+            "tests" : ['flexbox']
+        }))
+        .pipe(gulp.dest('./'))
 });
 /*********************
  * All Tasks Listeners

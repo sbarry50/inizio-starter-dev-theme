@@ -2,42 +2,40 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .content {
-  float: right;
-  width: $content--width;
+  flex: 0 1 auto;
+}
 
-  @include media( $breakpoint__screen-size--medium ) {
-    width: $content--width--medium-screen;
-  }
-  @include media( $breakpoint__screen-size--large ) {
-    width: $content--width--large-screen;
-  }
-  @include media( $breakpoint__screen-size--larger ) {
-    width: $content--width--larger-screen;
-  }
+.no-flexbox {
+  .content {
+    float: right;
 
-  .content-sidebar &,
-  .content-sidebar-sidebar &,
-  .sidebar-content-sidebar & {
-    float: left;
-  }
-
-  .content-sidebar-sidebar &,
-  .sidebar-content-sidebar &,
-  .sidebar-sidebar-content & {
-    width: $content-sidebar-sidebar--width;
-
-    @include media( $breakpoint__screen-size--medium ) {
-      width: $content-sidebar-sidebar--width--medium-screen;
+    @include media($breakpoint__screen-size--medium-up) {
+      width: $content--width--medium-screen--no-flex;
     }
-    @include media( $breakpoint__screen-size--large ) {
-      width: $content-sidebar-sidebar--width--large-screen;
+    @include media($breakpoint__screen-size--large-up) {
+      width: $content--width--large-screen--no-flex;
     }
-    @include media( $breakpoint__screen-size--larger ) {
-      width: $content-sidebar-sidebar--width--larger-screen;
+    @include media($breakpoint__screen-size--larger-up) {
+      width: $content--width--larger-screen--no-flex;
     }
-  }
 
-  .full-width-content & {
-    width: $full-width-content__content--width;
+    .content-sidebar & {
+      float: left;
+    }
+
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
+
+      @include media($breakpoint__screen-size--medium-up) {
+        width: $content-sidebar-sidebar--width--medium-screen--no-flex;
+      }
+      @include media($breakpoint__screen-size--large-up) {
+        width: $content-sidebar-sidebar--width--large-screen--no-flex;
+      }
+      @include media($breakpoint__screen-size--larger-up) {
+        width: $content-sidebar-sidebar--width--larger-screen--no-flex;
+      }
+    }
   }
 }
